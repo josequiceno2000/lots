@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Lots", page_icon="⛃")
-st.title("Lots: Tip Calculator")
+st.title("⛃ Lots: Tip Calculator")
 st.caption("Split the bill equitably.")
 
 total = st.number_input("What was the total bill?", min_value=0.0, step=0.01, format="%.2f")
