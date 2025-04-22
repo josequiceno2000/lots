@@ -1,8 +1,11 @@
 import streamlit as st
 
-st.set_page_config(page_title="Lots", page_icon="⛃")
-st.title("⛃ Lots: Tip Calculator")
-st.caption("Split the bill equitably.")
+st.set_page_config(page_title="Lots", page_icon="⛃", layout="centered")
+with st.sidebar:    
+    st.title("⛃ Lots")
+    st.caption("Split the bill equitably.")
+    st.markdown("---")
+    st.markdown("[GitHub Repo](https://github.com/josequiceno2000/lots)")
 
 total = st.number_input("What was the total bill?", min_value=0.0, step=0.01, format="%.2f")
 tip_percent = st.selectbox("How much tip would you like to give?", [10, 12, 15, 20, 25])
